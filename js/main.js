@@ -1,5 +1,5 @@
 let app = {
-    URL: 'http://api.themoviedb.org/3/',
+    URL: 'https://api.themoviedb.org/3/',
     INPUT: null,
     init: function () {
         //fetch the config info
