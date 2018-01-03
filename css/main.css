@@ -55,10 +55,10 @@ SEARCH BAR
 ********************************/
 .search{
     position:absolute;
-    z-index: 100;
+    z-index: 110;
     top:0;
-    right: 0;
-    left: 0;
+    right: 0rem;
+    left: 10rem;
     height:1rem;
     
 }
@@ -85,7 +85,7 @@ SEARCH BAR
     z-index:120;
     height:3rem;
     width: 3rem;
-    right:0;
+    right:7rem;
     top: 0;
     padding: 0.5rem;
     cursor: pointer;

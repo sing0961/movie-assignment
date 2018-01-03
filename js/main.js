@@ -34,7 +34,7 @@ let app = {
                 .then(response => response.json())
                 .then(data => {
                     console.log(data);
-//                    app.switchPages('search-results');
+                    //                    app.switchPages('search-results');
                     app.showMovies(data.results);
 
                 })
@@ -98,7 +98,7 @@ let app = {
             .then(response => response.json())
             .then(data => {
                 console.log(data);
-//                app.switchPages('recommended-results');
+                //                app.switchPages('recommended-results');
                 app.showRecommended(data.results);
             })
             .catch(err => {
@@ -124,20 +124,13 @@ let app = {
     showRecommended(movies) {
         //part of the url here is the movie id <- included in the movie object
 
-console.log(movies);
+        console.log(movies);
 
-//        document.getElementById('search-results').classList.remove('active');
-//        document.getElementById('recommended-results').classList.add('active');
-     
-      let section = document.querySelector('#search-results .content');
+        let section = document.querySelector('#search-results .content');
         let df = document.createDocumentFragment();
         section.innerHTML = "";
         movies.forEach(function (movie) {
             let div = document.createElement('div');
-
-
-            //console.log(movie.id);
-            // div.addEventListener('click', app.getRecommended);
             div.classList.add('movie');
             let h1 = document.createElement('h1');
             h1.textContent = movie.title;
@@ -149,16 +142,14 @@ console.log(movies);
 
             div.appendChild(img);
 
-
-
             let p = document.createElement('p');
             p.textContent = movie.overview;
             div.appendChild(p);
-           
+
             df.appendChild(div);
         });
         section.appendChild(df);
-}
+    }
 };
 
 
