@@ -1,0 +1,182 @@
+
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+html{
+    font-family: sans-serif;
+    line-height: 1.5;
+    }
+body{
+    
+    background-color:lightblue;
+    
+}
+
+
+
+section{
+    padding: 1rem 0;
+}
+button {
+		width:8rem;
+		height:2rem;
+	}
+/*******************************
+NAVIGATION
+********************************/
+.page{
+    display:none;
+    margin-top: 3rem;
+    padding: 1rem;
+}
+.page.active{
+    display:block;
+    padding: 3rem;
+}
+.movie{
+	margin-bottom: 2rem;
+	
+}
+.not{
+    display: none;
+}
+#search-img{
+	width:2rem;
+}
+#back-button{
+	transform: scale(-100%);
+    cursor: pointer;
+    
+}
+/*******************************
+SEARCH BAR
+********************************/
+.search{
+    position:absolute;
+    z-index: 100;
+    top:0;
+    right: 0;
+    left: 0;
+    height:1rem;
+    
+}
+#search-input{
+    
+    position: absolute;
+    
+    height: 3rem;
+    left: 3rem;
+    top: 0;
+    right: 1.5rem;
+    width: 80%;
+    padding: 0 1rem;
+    font-size: 1.8rem;
+    background-color: black;
+    color: white;
+    display: inline;
+    
+}
+
+#search-button{
+    position: absolute;
+    background-color:lightblue;
+    z-index:120;
+    height:3rem;
+    width: 3rem;
+    right:0;
+    top: 0;
+    padding: 0.5rem;
+    cursor: pointer;
+    
+   
+}
+/*******************************
+SEARCH RESULTS
+********************************/
+.movie{
+    max-width: 800px;
+    padding: 2rem;
+    border: 1px solid ;
+    overflow: auto;/* make the border wrap floated children*/
+    clear: both;
+	
+}
+
+.poster{
+    float:left;
+    margin: 0 0.5rem 0.5rem 0;
+    width: 140px;
+    height: auto;
+    min-height: 150px;
+}
+.movie-title{
+    font-size: 2rem;
+    color: black;
+}
+
+.attribution{
+    text-align: center;
+    width: 12rem;
+    margin: auto;
+    margin-top: 4%;
+}
+.attribution img{
+    width:100%;
+    height: auto;
+    
+     
+    }
+.attribution img:hover{
+    transform:rotate(360deg);
+}
+/*******************************
+MEDIA QUERRY
+*******************************/
+
+.loading {
+    display: none;
+}
+
+
+@media screen and (min-width:850px){
+    .attribution{
+        margin-top: 3%;
+    }
+    
+    #search-input {
+    font-size: 1rem;
+    
+}
+@media screen and (min-width:1200px){
+	.movie{width:50%;
+	
+    .page{
+        margin: 6rem 11rem;
+    }
+    #search-input{
+        width: 70%;
+    }
+    .attribution{
+        margin-top: 25%;
+    }
+}
+	
+/*******************************
+RECOMMENDATION
+********************************/
+
+
+    
+    
+/*****************************
+FOOTER
+******************************/
+    .footer {
+        outline-color: silver;
+        color:black;
+        text-align: center;
+        
+
+    }
